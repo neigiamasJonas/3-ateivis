@@ -9,15 +9,15 @@
 </head>
 
 <body>
-    <main style="background-color: white; width: 80%; margin-left: 10%; margin-top: 10%;">
-       <div >
-        <img style="width: 50%; float: right;" src="./png/lekste2.png" alt="Turetu buti nuotrauka..."> 
-           <h1>404</h1>
-           <p>Page not found</p>
+    <main style="width: 60%; margin-left: 20%; display: inline-block; margin-top: 10%;">
+       <div style="width: 30%; float: left;">
+           <h1 style="font-size: 100px; font-style: italic; color: blue;">404</h1>
+           <p style="font-size: 30px; color: gray; text-transform: uppercase;">Page not found</p>
            <a href="#">Go to home</a>
-
        </div>
-       
+
+       <img style="width: 60%; float: right;" src="./png/lekste2.png" alt="Turetu buti nuotrauka..."> 
+
     </main>
 </body>
 
@@ -42,11 +42,16 @@ margin-bottom: 20%;
 margin-left: 20%;
 
 Atvaizdavimo budas:
-display: block;         <-- stulpeliu
-display: inline;        <-- eilute, bet tekstas sklandziai persikelia i nauja eilute
-display: inline-block;  <-- eilute, max plotis iki tevo ribu, bet nepersikelineja i naujas eilutes
+display: block;         <-- stulpeliu (daugumos elementu pradine reiksme) ((visi iskyrus nuorodas))
+display: inline;        <-- eilute, bet tekstas sklandziai persikelia i nauja eilute (vos keletas) ((visos nuorodos dazniausiai inline ir tekstai))
+display: none;          <-- elementai nesimato/nerodomi (vos keli)
+display: inline-block;  <-- eilute, max plotis iki tevo ribu, bet nepersikelineja i naujas eilutes, visas krenta i nauja eilute
 
-Sventa Marija:
+Priverstinis elemnetu nustumimas (horizontaliai) nurodyta kryptimi:
+float: right;
+float: left;
+
+((Sventa Marija)):   (jeigu CHILD elementas floatina, PARENT elementas privalo tureti display: inline-block;)
 display: inline-block;
 width: 100%;
 float: left;
